@@ -15,12 +15,19 @@ object Form1: TForm1
   PixelsPerInch = 96
   TextHeight = 13
   object Content: TMemo
-    Left = 160
-    Top = 32
-    Width = 185
-    Height = 89
+    Left = 0
+    Top = 0
+    Width = 908
+    Height = 421
+    Align = alClient
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Times New Roman'
+    Font.Style = []
     Lines.Strings = (
       '')
+    ParentFont = False
     TabOrder = 0
   end
   object MainMenu1: TMainMenu
@@ -36,6 +43,7 @@ object Form1: TForm1
       end
       object OpenctrlO1: TMenuItem
         Caption = 'Open ctrl+O'
+        OnClick = OpenctrlO1Click
       end
       object SavectrlS1: TMenuItem
         Caption = 'Save ctrl+S'
@@ -77,5 +85,9 @@ object Form1: TForm1
         end
       end
     end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 664
+    Top = 88
   end
 end

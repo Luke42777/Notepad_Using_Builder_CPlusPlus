@@ -14,4 +14,13 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
- 
+
+void __fastcall TForm1::OpenctrlO1Click(TObject *Sender)
+{
+     if(OpenDialog1->Execute()) //if there is file name and user clicks open
+     {
+        Content->Lines->LoadFromFile(OpenDialog1->FileName);
+     }
+}
+//---------------------------------------------------------------------------
+

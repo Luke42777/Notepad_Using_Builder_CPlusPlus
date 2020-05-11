@@ -8,6 +8,7 @@
 #include <StdCtrls.hpp>
 #include <Forms.hpp>
 #include <Menus.hpp>
+#include <Dialogs.hpp>
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -31,6 +32,8 @@ __published:	// IDE-managed Components
         TMenuItem *Appinfo1;
         TMenuItem *VisitappGitHubpage1;
         TMemo *Content;
+        TOpenDialog *OpenDialog1;
+        void __fastcall OpenctrlO1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);
