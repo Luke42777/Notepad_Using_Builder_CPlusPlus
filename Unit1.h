@@ -36,6 +36,7 @@ __published:	// IDE-managed Components
         TSaveDialog *SaveDialog1;
         void __fastcall OpenctrlO1Click(TObject *Sender);
         void __fastcall Saveas1Click(TObject *Sender);
+        void __fastcall SavectrlS1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);
