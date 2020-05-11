@@ -19,7 +19,14 @@ void __fastcall TForm1::OpenctrlO1Click(TObject *Sender)
 {
      if(OpenDialog1->Execute()) //if there is file name and user clicks open
      {
-        Content->Lines->LoadFromFile(OpenDialog1->FileName);
+        try{
+                Content->Lines->LoadFromFile(OpenDialog1->FileName);
+           }
+        catch(...)
+           {
+             ShowMessage("Opening file failure.Make sure file does exist");
+           }
+
      }
 }
 //---------------------------------------------------------------------------

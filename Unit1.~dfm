@@ -87,6 +87,7 @@ object Form1: TForm1
     end
   end
   object OpenDialog1: TOpenDialog
+    Filter = 'Text files[TXT}|*txt|All files|**'
     Left = 664
     Top = 88
   end
