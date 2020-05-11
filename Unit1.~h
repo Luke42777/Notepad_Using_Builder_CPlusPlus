@@ -33,7 +33,9 @@ __published:	// IDE-managed Components
         TMenuItem *VisitappGitHubpage1;
         TMemo *Content;
         TOpenDialog *OpenDialog1;
+        TSaveDialog *SaveDialog1;
         void __fastcall OpenctrlO1Click(TObject *Sender);
+        void __fastcall Saveas1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);

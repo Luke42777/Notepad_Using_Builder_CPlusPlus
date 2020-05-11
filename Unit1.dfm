@@ -94,6 +94,7 @@ object Form1: TForm1
   end
   object SaveDialog1: TSaveDialog
     Filter = 'Text file[TXT]|*.txt|All files|*.*'
+    Options = [ofOverwritePrompt, ofHideReadOnly, ofEnableSizing]
     Left = 504
     Top = 88
   end
