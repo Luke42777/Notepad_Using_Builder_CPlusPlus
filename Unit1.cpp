@@ -31,3 +31,20 @@ void __fastcall TForm1::OpenctrlO1Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+
+void __fastcall TForm1::Saveas1Click(TObject *Sender)
+{
+         if(SaveDialog1->Execute()) //if there is file name and user clicks open
+     {
+        try{
+                Content->Lines->SaveToFile(SaveDialog1->FileName);
+           }
+        catch(...)
+           {
+             ShowMessage("Saving file failure");
+           }
+
+     }
+}
+//---------------------------------------------------------------------------
+

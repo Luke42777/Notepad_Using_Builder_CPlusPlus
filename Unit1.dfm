@@ -50,6 +50,7 @@ object Form1: TForm1
       end
       object Saveas1: TMenuItem
         Caption = 'Save as '
+        OnClick = Saveas1Click
       end
     end
     object Edit1: TMenuItem
@@ -89,6 +90,11 @@ object Form1: TForm1
   object OpenDialog1: TOpenDialog
     Filter = 'Text files[TXT}|*txt|All files|**'
     Left = 664
+    Top = 88
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = 'Text file[TXT]|*.txt|All files|*.*'
+    Left = 504
     Top = 88
   end
 end
