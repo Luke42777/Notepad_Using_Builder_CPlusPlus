@@ -8,6 +8,8 @@
 #pragma package(smart_init)
 #pragma resource "*.dfm"
 TForm1 *Form1;
+AnsiString fileName = "";  // variable to store file name for \"Save "\ option
+                           //empty at the beginning
 //---------------------------------------------------------------------------
 __fastcall TForm1::TForm1(TComponent* Owner)
         : TForm(Owner)
@@ -21,6 +23,7 @@ void __fastcall TForm1::OpenctrlO1Click(TObject *Sender)
      {
         try{
                 Content->Lines->LoadFromFile(OpenDialog1->FileName);
+                fileName =   OpenDialog1->FileName;
            }
         catch(...)
            {
@@ -38,6 +41,7 @@ void __fastcall TForm1::Saveas1Click(TObject *Sender)
      {
         try{
                 Content->Lines->SaveToFile(SaveDialog1->FileName);
+                 fileName =   SaveDialog1->FileName;
            }
         catch(...)
            {
@@ -45,6 +49,27 @@ void __fastcall TForm1::Saveas1Click(TObject *Sender)
            }
 
      }
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::SavectrlS1Click(TObject *Sender)
+{
+     if(!(fileName == ""))
+     {
+         try{
+                Content->Lines->SaveToFile(fileName);
+           }
+        catch(...)
+           {
+             ShowMessage("Saving file failure");
+           }
+     }
+     else
+     {
+        ShowMessage("Save as file first");
+     }
+
 }
 //---------------------------------------------------------------------------
 

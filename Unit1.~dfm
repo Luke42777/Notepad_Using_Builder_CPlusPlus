@@ -47,6 +47,7 @@ object Form1: TForm1
       end
       object SavectrlS1: TMenuItem
         Caption = 'Save ctrl+S'
+        OnClick = SavectrlS1Click
       end
       object Saveas1: TMenuItem
         Caption = 'Save as '

@@ -55,19 +55,13 @@ void __fastcall TForm1::Saveas1Click(TObject *Sender)
 
 void __fastcall TForm1::SavectrlS1Click(TObject *Sender)
 {
-     if(!(fileName == ""))
+     if(fileName != "")
      {
-         try{
-                Content->Lines->SaveToFile(fileName);
-           }
-        catch(...)
-           {
-             ShowMessage("Saving file failure");
-           }
+       Content->Lines->SaveToFile(fileName);// if not empty(file had been saved already)
      }
      else
      {
-        ShowMessage("Save as file first");
+          Form1->Saveas1Click( MainMenu1);
      }
 
 }
