@@ -71,7 +71,7 @@ void __fastcall TForm1::SavectrlS1Click(TObject *Sender)
 void __fastcall TForm1::New1Click(TObject *Sender)
 {
     if(Application->MessageBox("Do you really want to create new file?", "Confirm",
-        MB_YESNOCANCEL == IDYES))
+        MB_YESNOCANCEL | MB_ICONQUESTION) == IDYES)
         {
         Content->Lines->Clear();
         fileName = ""; //we must clear file name if user want to create new file
@@ -117,7 +117,13 @@ void __fastcall TForm1::ContentKeyDown(TObject *Sender, WORD &Key,
 
 void __fastcall TForm1::Close1Click(TObject *Sender)
 {
-      Application->Terminate();
+       if(Application->MessageBox("Do you really want to close the application?", "Confirm",
+        MB_YESNOCANCEL | MB_ICONQUESTION) == IDYES)
+        {
+            Form1->SavectrlS1Click(MainMenu1);
+            Application->Terminate();
+        }
+
 }
 //---------------------------------------------------------------------------
 

@@ -115,3 +115,9 @@ void __fastcall TForm1::ContentKeyDown(TObject *Sender, WORD &Key,
 
 
 
+void __fastcall TForm1::Close1Click(TObject *Sender)
+{
+      Application->Terminate();
+}
+//---------------------------------------------------------------------------
+
