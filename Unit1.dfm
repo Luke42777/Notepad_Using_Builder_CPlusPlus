@@ -29,6 +29,7 @@ object Form1: TForm1
       '')
     ParentFont = False
     TabOrder = 0
+    OnKeyDown = ContentKeyDown
   end
   object MainMenu1: TMainMenu
     Left = 816
@@ -37,6 +38,7 @@ object Form1: TForm1
       Caption = 'File'
       object New1: TMenuItem
         Caption = 'New'
+        OnClick = New1Click
       end
       object N1: TMenuItem
         Caption = '-'
@@ -46,7 +48,7 @@ object Form1: TForm1
         OnClick = OpenctrlO1Click
       end
       object SavectrlS1: TMenuItem
-        Caption = 'Save ctrl+S'
+        Caption = 'Save   ctrl+S'
         OnClick = SavectrlS1Click
       end
       object Saveas1: TMenuItem

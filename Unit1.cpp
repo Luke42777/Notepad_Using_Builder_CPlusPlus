@@ -61,8 +61,47 @@ void __fastcall TForm1::SavectrlS1Click(TObject *Sender)
      }
      else
      {
-          Form1->Saveas1Click( MainMenu1);
+          Form1->Saveas1Click(MainMenu1);
      }
+
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::New1Click(TObject *Sender)
+{
+    if(Application->MessageBox("Do you really want to create new file?", "Confirm",
+        MB_YESNOCANCEL == IDYES))
+        {
+        Content->Lines->Clear();
+        fileName = ""; //we must clear file name if user want to create new file
+        }           //to avoid overwritting
+
+        //read condition above this way:
+        //if someone click YES in message box: clear memeo content and change
+        //file name to none
+        //otherwise do nothing
+
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::ContentKeyDown(TObject *Sender, WORD &Key,
+      TShiftState Shift)
+{
+
+    if( Shift.Contains(ssCtrl))
+    {
+        if(Key == 's' || Key == 'S')
+         {
+           Form1->SavectrlS1Click(MainMenu1);
+
+         }
+        if(  Key == 'O' || Key == 'o')
+         {
+           Form1->OpenctrlO1Click(MainMenu1);
+         }
+    }
+
 
 }
 //---------------------------------------------------------------------------

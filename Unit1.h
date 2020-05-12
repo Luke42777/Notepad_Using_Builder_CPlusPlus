@@ -37,6 +37,9 @@ __published:	// IDE-managed Components
         void __fastcall OpenctrlO1Click(TObject *Sender);
         void __fastcall Saveas1Click(TObject *Sender);
         void __fastcall SavectrlS1Click(TObject *Sender);
+        void __fastcall New1Click(TObject *Sender);
+        void __fastcall ContentKeyDown(TObject *Sender, WORD &Key,
+          TShiftState Shift);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);
