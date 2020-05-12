@@ -93,16 +93,25 @@ void __fastcall TForm1::ContentKeyDown(TObject *Sender, WORD &Key,
     {
         if(Key == 's' || Key == 'S')
          {
-           Form1->SavectrlS1Click(MainMenu1);
+           Form1->SavectrlS1Click(MainMenu1); // MainMenu because it is onClic of this component
 
          }
         if(  Key == 'O' || Key == 'o')
          {
            Form1->OpenctrlO1Click(MainMenu1);
          }
+         if(  Key == 'N' || Key == 'n')
+         {
+           Form1->New1Click(MainMenu1);
+         }
+
     }
 
 
 }
 //---------------------------------------------------------------------------
+
+
+
+
 

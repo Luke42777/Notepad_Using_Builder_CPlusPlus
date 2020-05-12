@@ -57,6 +57,7 @@ object Form1: TForm1
       end
       object Close1: TMenuItem
         Caption = 'Close'
+        OnClick = Close1Click
       end
     end
     object Edit1: TMenuItem

@@ -37,35 +37,38 @@ object Form1: TForm1
     object File1: TMenuItem
       Caption = 'File'
       object New1: TMenuItem
-        Caption = 'New'
+        Caption = 'New       Ctrl+N'
         OnClick = New1Click
       end
       object N1: TMenuItem
         Caption = '-'
       end
       object OpenctrlO1: TMenuItem
-        Caption = 'Open ctrl+O'
+        Caption = 'Open     Ctrl+O'
         OnClick = OpenctrlO1Click
       end
       object SavectrlS1: TMenuItem
-        Caption = 'Save   ctrl+S'
+        Caption = 'Save       Ctrl+S'
         OnClick = SavectrlS1Click
       end
       object Saveas1: TMenuItem
         Caption = 'Save as '
         OnClick = Saveas1Click
       end
+      object Close1: TMenuItem
+        Caption = 'Close'
+      end
     end
     object Edit1: TMenuItem
       Caption = 'Edit'
       object CutctrlX1: TMenuItem
-        Caption = 'Cut ctrl+X'
+        Caption = 'Cut     Ctrl+X'
       end
       object CopyctrlC1: TMenuItem
-        Caption = 'Copy ctrl+C'
+        Caption = 'Copy  Ctrl+C'
       end
       object PastectrlV1: TMenuItem
-        Caption = 'Paste ctrl+V'
+        Caption = 'Paste  Ctrl+V'
       end
     end
     object Format1: TMenuItem

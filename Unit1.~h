@@ -34,6 +34,7 @@ __published:	// IDE-managed Components
         TMemo *Content;
         TOpenDialog *OpenDialog1;
         TSaveDialog *SaveDialog1;
+        TMenuItem *Close1;
         void __fastcall OpenctrlO1Click(TObject *Sender);
         void __fastcall Saveas1Click(TObject *Sender);
         void __fastcall SavectrlS1Click(TObject *Sender);
