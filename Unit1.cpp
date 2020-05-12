@@ -120,10 +120,22 @@ void __fastcall TForm1::Close1Click(TObject *Sender)
        if(Application->MessageBox("Do you really want to close the application?", "Confirm",
         MB_YESNOCANCEL | MB_ICONQUESTION) == IDYES)
         {
-            Form1->SavectrlS1Click(MainMenu1);
+           
             Application->Terminate();
         }
 
 }
 //---------------------------------------------------------------------------
+
+void __fastcall TForm1::FormClose(TObject *Sender, TCloseAction &Action)
+{
+       if(Application->MessageBox("Do you really want to close the application?", "Confirm",
+        MB_YESNO | MB_ICONQUESTION) == IDNO )
+        {
+            Action = caNone;
+        }
+
+}
+//---------------------------------------------------------------------------
+
 
