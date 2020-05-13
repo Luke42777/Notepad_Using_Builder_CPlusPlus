@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 192
-  Top = 125
+  Left = 181
+  Top = 88
   Width = 924
   Height = 480
   Caption = 'Notepad'
@@ -34,8 +34,8 @@ object Form1: TForm1
     OnKeyDown = ContentKeyDown
   end
   object MainMenu1: TMainMenu
-    Left = 816
-    Top = 24
+    Left = 528
+    Top = 8
     object File1: TMenuItem
       Caption = 'File'
       object New1: TMenuItem
@@ -94,24 +94,25 @@ object Form1: TForm1
       object Info1: TMenuItem
         Caption = 'Info'
         object Appinfo1: TMenuItem
-          Caption = 'App info'
+          Caption = 'About Notepad'
+          OnClick = Appinfo1Click
         end
         object VisitappGitHubpage1: TMenuItem
-          Caption = 'Visit app GitHub page'
+          Caption = 'Visit App GitHub page'
         end
       end
     end
   end
   object OpenDialog1: TOpenDialog
     Filter = 'Text files[TXT}|*txt|All files|**'
-    Left = 664
-    Top = 88
+    Left = 576
+    Top = 8
   end
   object SaveDialog1: TSaveDialog
     Filter = 'Text file[TXT]|*.txt|All files|*.*'
     Options = [ofOverwritePrompt, ofHideReadOnly, ofEnableSizing]
-    Left = 504
-    Top = 88
+    Left = 616
+    Top = 8
   end
   object FontDialog1: TFontDialog
     Font.Charset = DEFAULT_CHARSET
@@ -121,7 +122,7 @@ object Form1: TForm1
     Font.Style = []
     MinFontSize = 0
     MaxFontSize = 0
-    Left = 296
-    Top = 80
+    Left = 664
+    Top = 8
   end
 end

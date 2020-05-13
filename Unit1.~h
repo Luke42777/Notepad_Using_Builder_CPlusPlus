@@ -35,6 +35,7 @@ __published:	// IDE-managed Components
         TOpenDialog *OpenDialog1;
         TSaveDialog *SaveDialog1;
         TMenuItem *Close1;
+        TFontDialog *FontDialog1;
         void __fastcall OpenctrlO1Click(TObject *Sender);
         void __fastcall Saveas1Click(TObject *Sender);
         void __fastcall SavectrlS1Click(TObject *Sender);
@@ -47,6 +48,7 @@ __published:	// IDE-managed Components
         void __fastcall CopyctrlC1Click(TObject *Sender);
         void __fastcall PastectrlV1Click(TObject *Sender);
         void __fastcall WordWrap1Click(TObject *Sender);
+        void __fastcall Font1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
         __fastcall TForm1(TComponent* Owner);

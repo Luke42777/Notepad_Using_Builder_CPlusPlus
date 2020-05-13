@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "Unit1.h"
+#include "Unit2.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -200,6 +201,13 @@ void __fastcall TForm1::Font1Click(TObject *Sender)
        Content->Font->Size = FontDialog1->Font->Size;
        Content->Font->Style = FontDialog1->Font->Style;
      }
+}
+//---------------------------------------------------------------------------
+
+
+void __fastcall TForm1::Appinfo1Click(TObject *Sender)
+{
+        Form2->ShowModal();
 }
 //---------------------------------------------------------------------------
 
