@@ -65,12 +65,15 @@ object Form1: TForm1
       Caption = 'Edit'
       object CutctrlX1: TMenuItem
         Caption = 'Cut     Ctrl+X'
+        OnClick = CutctrlX1Click
       end
       object CopyctrlC1: TMenuItem
         Caption = 'Copy  Ctrl+C'
+        OnClick = CopyctrlC1Click
       end
       object PastectrlV1: TMenuItem
         Caption = 'Paste  Ctrl+V'
+        OnClick = PastectrlV1Click
       end
     end
     object Format1: TMenuItem
