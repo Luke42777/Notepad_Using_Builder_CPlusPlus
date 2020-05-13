@@ -29,6 +29,7 @@ object Form1: TForm1
     Lines.Strings = (
       '')
     ParentFont = False
+    ScrollBars = ssVertical
     TabOrder = 0
     OnKeyDown = ContentKeyDown
   end
@@ -80,6 +81,8 @@ object Form1: TForm1
       Caption = 'Format'
       object WordWrap1: TMenuItem
         Caption = 'Word Wrap'
+        Checked = True
+        OnClick = WordWrap1Click
       end
       object Font1: TMenuItem
         Caption = 'Font'

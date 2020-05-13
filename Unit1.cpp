@@ -136,6 +136,13 @@ void __fastcall TForm1::FormClose(TObject *Sender, TCloseAction &Action)
         }
 
 }
+
+
+
+
+
+
+
 //---------------------------------------------------------------------------
 
 
@@ -156,4 +163,31 @@ void __fastcall TForm1::PastectrlV1Click(TObject *Sender)
         Content->PasteFromClipboard();        
 }
 //---------------------------------------------------------------------------
+
+
+
+
+
+
+
+void __fastcall TForm1::WordWrap1Click(TObject *Sender)
+{
+    if(WordWrap1->Checked == true)
+    {
+        WordWrap1->Checked = false; // it's need to be chaned on click
+        Content->WordWrap = false;//word wrap Not working
+        Content->ScrollBars = ssBoth;     //vertical and horizontal to be working
+
+    }
+    else
+    {
+       WordWrap1->Checked = true;              // it's need to be chaned on click
+       Content->WordWrap = true;             //word wrap  working
+       Content->ScrollBars = ssVertical;     //vertical  to be working  only
+
+    }
+
+}
+//---------------------------------------------------------------------------
+
 

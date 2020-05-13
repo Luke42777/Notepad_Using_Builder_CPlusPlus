@@ -139,3 +139,21 @@ void __fastcall TForm1::FormClose(TObject *Sender, TCloseAction &Action)
 //---------------------------------------------------------------------------
 
 
+void __fastcall TForm1::CutctrlX1Click(TObject *Sender)
+{
+        Content->CutToClipboard();        
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::CopyctrlC1Click(TObject *Sender)
+{
+       Content->CopyToClipboard();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::PastectrlV1Click(TObject *Sender)
+{
+        Content->PasteFromClipboard();        
+}
+//---------------------------------------------------------------------------
+
