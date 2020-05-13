@@ -191,3 +191,15 @@ void __fastcall TForm1::WordWrap1Click(TObject *Sender)
 //---------------------------------------------------------------------------
 
 
+void __fastcall TForm1::Font1Click(TObject *Sender)
+{
+     if(FontDialog1->Execute())
+     {
+       Content->Font->Name = FontDialog1->Font->Name; // to get name of font
+       Content->Font->Color = FontDialog1->Font->Color;
+       Content->Font->Size = FontDialog1->Font->Size;
+       Content->Font->Style = FontDialog1->Font->Style;
+     }
+}
+//---------------------------------------------------------------------------
+

@@ -86,6 +86,7 @@ object Form1: TForm1
       end
       object Font1: TMenuItem
         Caption = 'Font'
+        OnClick = Font1Click
       end
     end
     object Help1: TMenuItem
@@ -111,5 +112,16 @@ object Form1: TForm1
     Options = [ofOverwritePrompt, ofHideReadOnly, ofEnableSizing]
     Left = 504
     Top = 88
+  end
+  object FontDialog1: TFontDialog
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    MinFontSize = 0
+    MaxFontSize = 0
+    Left = 296
+    Top = 80
   end
 end
