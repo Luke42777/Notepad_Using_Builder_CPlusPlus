@@ -211,3 +211,9 @@ void __fastcall TForm1::Appinfo1Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+void __fastcall TForm1::VisitappGitHubpage1Click(TObject *Sender)
+{
+      ShellExecute(NULL,"open","https://github.com/Luke42777/Notepad_Using_Builder_CPlusPlus.git ", NULL ,NULL ,SW_SHOWNORMAL);
+}
+//---------------------------------------------------------------------------
+

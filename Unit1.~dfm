@@ -1,6 +1,6 @@
 object Form1: TForm1
-  Left = 192
-  Top = 125
+  Left = 181
+  Top = 88
   Width = 924
   Height = 480
   Caption = 'Notepad'
@@ -95,9 +95,11 @@ object Form1: TForm1
         Caption = 'Info'
         object Appinfo1: TMenuItem
           Caption = 'About Notepad'
+          OnClick = Appinfo1Click
         end
         object VisitappGitHubpage1: TMenuItem
           Caption = 'Visit App GitHub page'
+          OnClick = VisitappGitHubpage1Click
         end
       end
     end

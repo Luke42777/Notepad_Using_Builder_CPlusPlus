@@ -4,6 +4,7 @@
 #pragma hdrstop
 
 #include "Unit1.h"
+#include "Unit2.h"
 //---------------------------------------------------------------------------
 #pragma package(smart_init)
 #pragma resource "*.dfm"
@@ -203,4 +204,16 @@ void __fastcall TForm1::Font1Click(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
+
+void __fastcall TForm1::Appinfo1Click(TObject *Sender)
+{
+        Form2->ShowModal();
+}
+//---------------------------------------------------------------------------
+
+void __fastcall TForm1::VisitappGitHubpage1Click(TObject *Sender)
+{
+     ShellExecute(NULL,"open"," https://miroslawzelent.pl", NULL ,NULL ,SW_SHOWNORMAL);
+}
+//---------------------------------------------------------------------------
 

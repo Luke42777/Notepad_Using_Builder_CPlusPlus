@@ -99,6 +99,7 @@ object Form1: TForm1
         end
         object VisitappGitHubpage1: TMenuItem
           Caption = 'Visit App GitHub page'
+          OnClick = VisitappGitHubpage1Click
         end
       end
     end
